@@ -1,0 +1,59 @@
+Inheritance in Java
+Abstract and Final class in Java
+Interface in Java
+Overloading and Overriding in Java
+Access protection in Java
+How to import a predefine package by Java and user defined class from other packages
+
+--------------------------------Access Protection------------------------------------
+
+1. Protected object of parent class can be accessed through child class obj in java unlike c++
+in c++ parent class protected variable can't be accessed through child class obj
+2. Public class can be accessed throughout any project or it can be accessible inside all the packages of the project by simply import the package of public class
+3. Default class can be accessible throughout single package by simply creating the object of default lass
+4. Outside the package default class are not visible
+5. Within the same package there can only be a single class of the same name , it means if you have 5 packages in your project that at max than at max you can have 5 classes of the same name
+ 
+------------------------------------------------------------------------------------
+
+-----------------------------------Data Members-----------------------------------------
+
+Private: 	Within the class only
+
+Default: 	Within the class
+		 	Child [without object]
+		 	Object of child [within package]
+		 	Not outside the package [child object]
+
+Protected:  Within the class
+			Child [without object]
+			Object of child within the program
+			Object of child within the program[within the package]
+			
+Public: 	Within the class
+			Child [without object]
+			Object of child [within package]
+			Object of child [outside Package,import]
+		
+--------------------------------------For class---------------------------------------------
+
+Default: Within the same package [with object]
+Public: Outside the package [with import]
+
+---------------------------------------------------------------------------------------------
+
+Static and Non static 
+1. Variables (count objects   //    Jagged Array)
+2. Methods
+
+A static method is a mthod that belongs to a class, but it does not belong to an instance of that class and this method can be called without the instance or object of that class.
+
+A static method can only access static data members and static methods of another class or same class but can not access non-static methods and variables.
+
+But this rule is not applied on non-static members and variables.
+
+---------------------------------------------------------------------------------------------
+
+Dynamic/Runtime Method Dispatched:
+
+'new' keyword is resolved during run time binding
