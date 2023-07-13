@@ -1,0 +1,21 @@
+-------------------------------Multithreading In JAVA--------------------------------------
+
+Multithreading in Java is a process of executing multiple threads simultaneously.
+So, independent work can be executed simultaneously.
+Multithreading in Java is a process of executing two or more threads simultaneously to maximum utilization of CPU. 
+
+Example: Kitchen,waiter,chef
+	*waiter will be in ideal ideal situation
+	*Main Thread(if no other thread is there,then work will be dome only by one main thread!)
+
+Two ways to create a thread in Java:
+1.By implementing Runnable interface
+	-Have to provide override definition of run method.
+2. By extending Thread class
+	-Have to provide override definition of run method.
+	
+	
+*When we call start method then separate call stack will be created for that particular thread.
+*When we call run method directly, then it will be stored in current stack[usually in main method stack]
+*We should not call run method directly, let JVM execute run() method through start() method by creating separate call stack
+*Otherwise it will behave as a simple current thread method
